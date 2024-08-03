@@ -1,8 +1,8 @@
-{{ define "body "}}
+{{ define "body"}}
 
 <div class="h5 bg-primary text-white text-center m-2 p-2">RSVP</div>
 
-{{ if gt (len .Error ) 0}}
+{{ if gt (len .Errors ) 0}}
 <ul class="text danger mt-3">
   {{ range .Errors }}
   <li>{{ . }}</li>
